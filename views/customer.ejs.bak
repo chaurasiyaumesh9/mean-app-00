@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> Customer record </title>
+  <% include layout/head %>
+ </head>
+
+ <body>
+
+ <div class="container">
+	<form class="form-inline" role="form">
+	
+	<div class="form-group">
+	    <label for="customerId"> Showing details for : </label>
+	    <input type="text" class="form-control" id="customerId" disabled value="<%= row['customerNumber'] %>">
+	  </div>
+	
+	  <div class="form-group">
+	    <label for="customerName">Customer Name</label>
+	    <input type="text" class="form-control" id="customerName" value="<%= row['customerName'] %>">
+	  </div>
+	  <div class="form-group">
+	    <label for="contactLastName">Contact Last Name</label>
+	    <input type="text" class="form-control" id="contactLastName" value="<%= row['contactLastName'] %>">
+	  </div>
+	  <div class="form-group">
+	    <label for="contactFirstName">Contact First Name</label>
+	    <input type="text" class="form-control" id="contactFirstName" value="<%= row['contactFirstName'] %>">
+	  </div>
+	  <button type="submit" class="btn btn-default">Submit</button>
+	</form>
+ </div>
+  
+ </body>
+</html>
