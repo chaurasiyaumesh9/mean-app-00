@@ -1,0 +1,17 @@
+{
+  "name": "ms-node",
+  "version": "1.0.0",
+  "description": "mySql with node ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "umch",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "mysql": "^2.10.0",
+    "nodemon": "^1.8.1"
+  }
+}

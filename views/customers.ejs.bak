@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> Customers </title>
+  <% include layout/head %>
+ </head>
+
+ <body>
+ 
+<div class="container">                                                                                      
+  <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Customer Name</th>
+        <th>Contact Last Name</th>
+        <th>Contact First Name</th>
+	<th>Phone</th>
+	<th>City</th>
+	<th>State</th>
+	<th>Country</th>
+	<th>Postal Code</th>
+	<th>Credit Limit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(var i=0;i<list.length; i++) { %>
+		<tr> 
+			<td> <a href="#"> <%= list[i]['customerNumber'] %> </a> </td>
+			<td>  <%= list[i]['customerName'] %>  </td>
+			<td>  <%= list[i]['contactLastName'] %>  </td>
+			<td>  <%= list[i]['contactFirstName'] %>  </td>
+			<td>  <%= list[i]['phone'] %>  </td>
+			<td>  <%= list[i]['city'] %>  </td>
+			<td>  <%= list[i]['state'] %>  </td>
+			<td>  <%= list[i]['country'] %>  </td>
+			<td>  <%= list[i]['postalCode'] %>  </td>
+			<td>  <%= list[i]['city'] %>  </td>
+		</tr>
+	<% } %>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+ </body>
+</html>
