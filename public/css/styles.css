@@ -1,0 +1,10 @@
+body {
+  background: rgba(255, 255, 255, 0); }
+
+div.customer-data {
+  max-width: 760px;
+  margin: 25px auto;
+  padding: 10px;
+  border: 1px solid #cccccc; }
+
+/*# sourceMappingURL=styles.css.map */
